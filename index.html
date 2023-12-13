@@ -3,54 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h1>My Portfolio</h1>
-        <p>Welcome to my portfolio. Here you can find information about me and my works.</p>
-
-        <div class="card">
-            <h2>About Me</h2>
-            <p>I am a beggining web developer with experience in HTML and CSS. I am passionate about creating modern and user-friendly websites.</p>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Artjom Patoka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <div class="card">
-            <h2>Skills</h2>
-            <p>
-                <i class="material-icons icon">code</i>
-                HTML
-            </p>
-            <p>
-                <i class="material-icons icon">palette</i>
-                CSS
-            </p>
+    <section id="hero" class="text-center">
+        <div class="container">
+            <h1 class="font-weight-bold">Artjom Patoka</h1>
+            <p class="lead">Passionate Developer</p>
         </div>
+    </section>
 
-        <div class="card">
-            <h2>Projects</h2>
-            <a href="KinoBaza/index.html">
-                <i class="material-icons icon">web</i>
-                Kinobaza
-            </a>
-            <a href="Hororsbaze/index.html">
-                <i class="material-icons icon">web</i>
-                Horrorbaza
-            </a>
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h2 class="font-weight-bold">About Me</h2>
+            <p>I'm a young programmer ready to do whatever is asked of him.</p>
         </div>
+    </section>
 
-        <div class="card">
-            <h2>Contact</h2>
-            <p>
-                <i class="material-icons icon">email</i>
-                Artjom.Patoka@ivkhk.ee
-            </p>
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="font-weight-bold">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
-</html>
+    </section>
+
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="font-weight-bold">Projects</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 id="baza" class="bold" style="min-height: 77px;">KinoBaza</h2>
+                                        <a href="KinoBaza/index.html" class="btn btn-primary btn-light">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 id="baza" class="bold" style="min-height: 77px;">Igrobaza</h2>
+                                        <a href="GamesBaza/index.html" class="btn btn-primary btn-light">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 id="baza" class="bold">KinoBaza Bootstrap</h2>
+                                        <a href="KinoBazaBootstrap/index.html" class="btn btn-primary btn-light">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 id="baza" class="bold">Igrobaza Bootstrap</h2>
+                                        <a href="GamesBazaBootstrap/index.html" class="btn btn-primary btn-light">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 id="baza" class="bold">Igrobaza Bootstrap5</h2>
+                                        <a href="GamesBazaBootstrap5/index.html" class="btn btn-primary btn-light">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 id="baza" class="bold">Bootstrap template 1</h2>
+                                        <a href="BootstrapSiteTemplate/index.html" class="btn btn-primary btn-light">Learn More</a>
+                                    </div>
+                                </section>
+                            
+                                <section id="contact" class="py-5">
+                                    <div class="container">
+                                        <h2 class="font-weight-bold">Contact Me</h2>
+                                        <p>Email: artjom.patoka@ivkhk.ee</p>
+                                    </div>
+                                </section>
+                            
+                                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+                            </body>
+                            </html>
