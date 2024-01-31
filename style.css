@@ -1,27 +1,26 @@
+/* Общие стили */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #212529;
     color: #ffffff;
     font-size: larger;
+    margin: 0; /* Убрать отступы */
 }
 
 .navbar {
-    background-color: #343a40;
-    position: fixed;
+    background-color: #343a40 !important; /* Уточнение важности для переопределения Bootstrap */
 }
 
-.bold, .btn{
+.bold, .btn {
     font-weight: bold;
 }
 
-.card{
-    background-color:#343a40;
+.card {
+    background-color: #343a40;
     border: none;
     filter: drop-shadow(0px 0px 50px #212529);
     min-height: 163px;
 }
-
-
 
 #hero {
     height: 100vh;
@@ -42,22 +41,19 @@ body {
 #projects {
     padding: 40px;
     background-color: #343a40;
+    color: #ffffff; /* Изменение цвета текста на более темный */
 }
 
 #contact {
     padding: 40px 0;
 }
 
-#baza{
+#baza {
     color: white;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
 .navbar {
-    background: linear-gradient(45deg, #007bff, #00bcd4);
+    background: linear-gradient(45deg, #007bff, #00bcd4) !important; /* Уточнение важности для переопределения Bootstrap */
 }
 
 .navbar-toggler-icon {
@@ -97,58 +93,112 @@ body {
     padding: 50px 0;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
-    font-size: larger;
+/* Прикольные изменения */
+h1 {
+    text-shadow: 2px 2px 4px #000000;
 }
 
+.btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #ff1e00;
+    border-color: #ff1e00;
+}
+
+/* Новые стили */
+#figma-projects .card {
+    height: 100%;
+    margin-bottom: 20px; /* Добавляем отступ между проектами Фигма */
+}
+
+#figma-projects .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#figma-projects .card-body h2 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    #figma-projects .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Дополнительные стили для текста на белом фоне */
+#about,
+#skills,
+#contact,
+#projects { /* Добавляем #projects */
+    color: #212529; /* Черный текст на белом фоне */
+}
+
+#about p,
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* Дополнительные стили и фичи */
+
+.fullstack-developer {
+    color: #ffffff; /* Белый цвет для FullStack Developer */
+}
+
+/* Анимация при наведении на кнопки */
+.btn-primary {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff1e00;
+    border-color: #ff1e00;
+}
+
+/* Анимация при наведении на карточки */
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Цвет текста на белом фоне */
+#about,
+#skills,
+#contact,
+#projects {
+    color: #212529;
+}
+
+#about p,
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* Новые стили для панели навигации */
 .navbar {
-    background-color: #343a40;
-}
-
-.navbar-brand {
-    color: #ffffff;
-    font-weight: bold;
+    background: linear-gradient(45deg, #007bff, #00bcd4) !important;
 }
 
 .navbar-toggler-icon {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff;
+    color: #fff;
 }
 
+/* Новые стили для раздела Hero */
 #hero {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 100px 0;
-}
-
-#about {
-    padding: 40px 0;
-}
-
-#skills {
-    background-color: #ffffff;
-    padding: 40px 0;
-}
-
-#projects {
-    background-color: #ffffff;
-    padding: 40px 0;
-}
-
-.card {
-    background-color: #007bff;
-    border: none;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
-    min-height: 200px;
-}
-
-#contact {
-    background-color: #ffffff;
-    padding: 40px 0;
+    background: linear-gradient(45deg, #007bff, #00bcd4);
+    color: #fff;
+    padding: 50px 0;
 }
