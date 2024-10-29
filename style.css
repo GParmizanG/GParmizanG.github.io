@@ -1,0 +1,98 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #212529; /* Темный фон для всей страницы */
+    color: #ffffff; /* Цвет текста по умолчанию */
+    font-size: larger; /* Размер шрифта */
+}
+
+.navbar {
+    background-color: #343a40; /* Темный фон для навбара */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Цвет кнопки навигации */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Цвет текста для ссылок */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cccccc; /* Цвет текста при наведении */
+}
+
+.section {
+    padding: 40px 0; /* Отступы для секций */
+}
+
+#hero {
+    height: 100vh; /* Высота героя */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #343a40; /* Темный фон для секции героя */
+    text-align: center; /* Центрирование текста */
+}
+
+h1 {
+    text-shadow: 2px 2px 4px #000; /* Тень текста */
+}
+
+/* Стили для карточек */
+.card {
+    background-color: #343a40; /* Фон карточек */
+    border: none; /* Без рамки */
+    filter: drop-shadow(0px 0px 50px #212529); /* Тень карточек */
+    min-height: 163px; /* Минимальная высота карточек */
+    margin: 15px 0; /* Отступы между карточками */
+}
+
+.card-body {
+    text-align: center; /* Центрирование текста в карточках */
+}
+
+.bold {
+    font-weight: bold; /* Жирный текст */
+}
+
+.btn {
+    font-weight: bold; /* Жирный текст для кнопок */
+}
+
+.btn-primary {
+    background-color: #ff6f61; /* Фоновый цвет кнопок */
+    border: none; /* Без рамки */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.btn-primary:hover {
+    background-color: #ff1e00; /* Цвет кнопки при наведении */
+}
+
+/* Текст на светлом фоне */
+.section-light {
+    background-color: #f8f9fa; /* Светлый фон для секций */
+    color: #212529; /* Темный цвет текста на светлом фоне */
+}
+
+/* Стили для секций */
+#about, #skills, #projects, #contact {
+    padding: 40px 0; /* Отступы для секций */
+}
+
+#baza {
+    color: white; /* Цвет текста в секции с базами */
+}
+
+/* Responsive для Фигма */
+#figma-projects .card {
+    height: 100%; /* Высота карточек для проектов в Фигме */
+    margin-bottom: 20px; /* Отступы между карточками */
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px; /* Отступы для карточек на маленьких экранах */
+    }
+}
